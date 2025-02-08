@@ -1,8 +1,14 @@
 *{
     margin: 0;
+    padding: 0;
     font-family: Arial;
-    border: border-box;
+    box-sizing: border-box;
 
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #E3E6E6
 }
 .navbar{
     height: 60px;
@@ -191,7 +197,7 @@ span{
 
 /* heroo section*/
 
-
+/* 
 .hero-section{
     background-image: url("assets/hero.jpg");
     background-size: cover;
@@ -211,3 +217,134 @@ span{
     width: 90%;
     margin-bottom: 25px;
 }
+
+.hero-message a{
+    color: #2162A1 ;
+} */
+.hero-slider{
+    display: flex;
+    overflow-y: hidden;
+}
+.heroimages{
+    max-width: 100%;
+    cursor: pointer;
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+
+.hero-slider  a{
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    padding:5vh 1vw;
+    background-color: #FFFFFF;
+    color: #0E0F0D;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+
+} 
+
+.control-next{
+    right: 0 ;
+}
+
+
+
+
+/* shoping section */
+
+
+.shop-section{
+    display: flex;
+    justify-content: space-evenly ;
+    background-color: #FFFFFF;
+    align-items:space-evenly ;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: -20vw;
+    background-color: #E3E6E6
+    
+} 
+
+.box{
+    height : 430px;
+    width: 23%;
+    background-color:white;
+    padding: 15px;
+    margin-bottom: 25px;
+    z-index: 1;
+} 
+
+.box1image{
+    /* display: block; */
+    object-fit: cover;
+    height: 335px;
+    width: 95%;
+
+    /* margin-right: px; */
+    /* margin: 100px; */
+}
+.box2image{
+    display: block;
+    object-fit: cover;
+    height: 295px;
+    width: 95%;
+    margin-bottom: 16.5px;
+}
+.box3image{  
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    height: 335px;
+    width: 95%;
+
+}
+.box4image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    height: 310px;
+    width: 95%;
+}
+
+.box5image{
+    display: block;
+    object-fit: cover;
+    height: 310px;
+    width: 95%;
+
+}
+.box6image{
+    display: block;
+    object-fit: cover;
+    height: 310px;
+    width: 95%;
+
+}
+.box7image{
+    display: block;
+    object-fit: cover;
+    height: 310px;
+    width: 95%;
+
+}
+.box8image{
+    display: block;
+    object-fit: cover;
+    height: 310px;
+    width: 95%;
+}
+
+.lbox{
+    width: 97%;
+    height: 250px;
+    background-color: white;
+
+} 
+
+
+
+
+
+
