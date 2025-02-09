@@ -20,20 +20,20 @@ html,body{
 
 }
 
-
-/*  nav bar logo */
-
-
-.nav-logo{
-    height: 50px;
-    width: 100px;
+a{
+    color: #2162A1 ;
+    text-decoration: none;
+    cursor: pointer;
 }
-.logo{
-    background-image: url("./assets/amazon_logo.png");
-    height: 50px;
-    width: 100%;
-    background-size: cover;
+a:hover{
+    color: #0D3352;
 }
+
+img:hover{
+    cursor: pointer;
+
+}
+
 
 .border{
     border: 1.5px solid transparent;
@@ -120,8 +120,32 @@ html,body{
 
 }
 
+/* nav-language */
+.nav-language{
+    display: flex;
+    column-gap: 5px;
+}
+
+.nav-language i {
+    color: #A7ACB1;
+    margin-top: 3px;
+}
+
+.nav-language p{
+    font-weight: bold;
+}
 /* hello sign &  nav return  */
 
+
+.nav-signin-parent{
+    display: flex;
+    column-gap: 5px;
+
+}
+.nav-signin-parent i{
+    margin-top: 18px;
+    color: #A7ACB1;
+}
 span{
     font-size: 0.7rem;
     line-height: 0.72rem;
@@ -154,9 +178,9 @@ span{
     align-items: center;
     margin-bottom: 7px;
 }
-
-.nav-cart i {
-    font-size: 30px;
+.nav-cart img{
+    width: 35px;
+    font-weight: bolder;
 }
 
 .nav-cart p {
@@ -186,7 +210,7 @@ span{
     margin-left: 15px;
 }
 .panel-options{
-    width: 70%;
+    width: 75%;
     font-size: 0.85rem;
 }
 
@@ -197,30 +221,27 @@ span{
 
 /* heroo section*/
 
-/* 
+
 .hero-section{
-    background-image: url("assets/hero.jpg");
-    background-size: cover;
-    height: 290px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
 .hero-message{
+
     background-color: white;
     height: 40px;
-    display: flex;
-    align-items: center;
     justify-content: center;
     font-size: 0.85rem;
     width: 90%;
     margin-bottom: 25px;
+    position: absolute;
+    z-index: 99;
+    top:43%;
+    display: flex;
+    align-items: center;
 }
-
-.hero-message a{
-    color: #2162A1 ;
-} */
 .hero-slider{
     display: flex;
     overflow-y: hidden;
@@ -233,7 +254,7 @@ span{
 
 .hero-slider  a{
     position: absolute;
-    top: 20%;
+    top: 25%;
     z-index: 1;
     padding:5vh 1vw;
     background-color: #FFFFFF;
@@ -278,8 +299,9 @@ span{
 .box1image{
     /* display: block; */
     object-fit: cover;
-    height: 335px;
+    height: 300px;
     width: 95%;
+    margin-bottom: 35px;
 
     /* margin-right: px; */
     /* margin: 100px; */
@@ -287,9 +309,9 @@ span{
 .box2image{
     display: block;
     object-fit: cover;
-    height: 295px;
+    height: 275px;
     width: 95%;
-    margin-bottom: 16.5px;
+    margin-bottom: 37px;
 }
 .box3image{  
     display: block;
@@ -303,9 +325,10 @@ span{
     display: block;
     object-fit: cover;
     margin-top: 5px;
-    margin-bottom: 25px;
-    height: 310px;
+    margin-bottom: 45px;
+    height: 288px;
     width: 95%;
+    margin-top: 6.5px;
 }
 
 .box5image{
@@ -313,35 +336,158 @@ span{
     object-fit: cover;
     height: 310px;
     width: 95%;
+    margin-bottom: 32.5px;
 
 }
 .box6image{
     display: block;
     object-fit: cover;
-    height: 310px;
+    height: 285px;
     width: 95%;
+    margin-bottom: 30px;
+
 
 }
 .box7image{
     display: block;
     object-fit: cover;
-    height: 310px;
+    height: 275px;
     width: 95%;
+    margin-bottom: 40px;
 
 }
 .box8image{
     display: block;
     object-fit: cover;
-    height: 310px;
+    height: 300px;
     width: 95%;
+    margin-bottom: 42.5px;
+
 }
 
-.lbox{
+.products-slider{
     width: 97%;
     height: 250px;
     background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
 
 } 
+
+.slider-products{
+    height:160px ;
+    object-fit: cover;
+}
+
+.products-images-parent{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+.products-slider h2{
+    margin-bottom: 5px;
+}
+
+.box9image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    height: 290px;
+    width: 95%;
+    margin-bottom: 46px;
+}
+
+.box10image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 38px;
+    height: 270px;
+    width: 95%;
+}
+
+.box11image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 38px;
+    height: 270px;
+    width: 95%;
+}
+
+.box12image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 25.5px;
+    height: 310px;
+    width: 95%;
+}
+.box13image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 45.5px;
+    height: 290px;
+    width: 95%;
+}
+.box14image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 58px;
+    height: 250px;
+    width: 95%;
+}
+.box15image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 25.5px;
+    height: 310px;
+    width: 95%;
+}
+.box16image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    height: 290px;
+    width: 95%;
+}
+.box17image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    height: 290px;
+    width: 95%;
+}
+.box18image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    height: 277px;
+    width: 95%;
+}
+.box19image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    height: 290px;
+    width: 95%;
+}
+.box20image{    
+    display: block;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    height: 290px;
+    width: 95%;
+}
 
 
 
